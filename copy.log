@@ -1,0 +1,829 @@
+2019-09-26T08:33:59.16949416Z {"component":"virt-handler","hostname":"host-172-16-0-15","level":"info","pos":"virt-handler.go:187","timestamp":"2019-09-26T08:33:59.169366Z"}
+2019-09-26T08:34:09.973165429Z {"component":"virt-handler","level":"info","msg":"Starting collector: node name=host-172-16-0-15","pos":"prometheus.go:395","timestamp":"2019-09-26T08:34:09.973082Z"}
+2019-09-26T08:34:09.973207292Z {"component":"virt-handler","level":"info","msg":"STARTING informer vmiInformer","pos":"virtinformers.go:203","timestamp":"2019-09-26T08:34:09.973175Z"}
+2019-09-26T08:34:09.973207292Z {"component":"virt-handler","level":"info","msg":"STARTING informer configMapInformer","pos":"virtinformers.go:203","timestamp":"2019-09-26T08:34:09.973196Z"}
+2019-09-26T08:34:09.973219518Z {"component":"virt-handler","level":"info","msg":"STARTING informer CRDInformer","pos":"virtinformers.go:203","timestamp":"2019-09-26T08:34:09.973207Z"}
+2019-09-26T08:34:10.073895199Z {"component":"virt-handler","level":"info","msg":"Starting virt-handler controller.","pos":"vm.go:516","timestamp":"2019-09-26T08:34:10.073405Z"}
+2019-09-26T08:34:10.073895199Z {"component":"virt-handler","level":"info","msg":"metrics: max concurrent requests=3","pos":"virt-handler.go:341","timestamp":"2019-09-26T08:34:10.073503Z"}
+2019-09-26T08:34:10.174041804Z {"component":"virt-handler","level":"info","msg":"Starting device plugin controller","pos":"device_controller.go:92","timestamp":"2019-09-26T08:34:10.173674Z"}
+2019-09-26T08:34:10.247560616Z {"component":"virt-handler","level":"info","msg":"kvm device plugin started","pos":"generic_device.go:156","timestamp":"2019-09-26T08:34:10.247279Z"}
+2019-09-26T08:34:10.247560616Z {"component":"virt-handler","level":"info","msg":"tun device plugin started","pos":"generic_device.go:156","timestamp":"2019-09-26T08:34:10.247319Z"}
+2019-09-26T08:34:10.247560616Z {"component":"virt-handler","level":"info","msg":"vhost-net device plugin started","pos":"generic_device.go:156","timestamp":"2019-09-26T08:34:10.247331Z"}
+2019-09-26T08:34:10.292962225Z {"component":"virt-handler","level":"info","msg":"Updating cluster config to resource version '19601'","pos":"config-map.go:400","timestamp":"2019-09-26T08:34:10.292409Z"}
+2019-09-26T08:34:24.201482119Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:34:24.201398Z"}
+2019-09-26T08:34:54.199673816Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:34:54.198932Z"}
+2019-09-26T08:35:24.19013551Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:35:24.190062Z"}
+2019-09-26T08:35:54.190065359Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:35:54.189962Z"}
+2019-09-26T08:36:24.193938352Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:36:24.193460Z"}
+2019-09-26T08:36:54.192979408Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:36:54.192168Z"}
+2019-09-26T08:37:12.466300618Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:37:12.466230Z"}
+2019-09-26T08:37:24.189687599Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:37:24.189621Z"}
+2019-09-26T08:37:42.460532305Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:37:42.460428Z"}
+2019-09-26T08:37:54.188935922Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:37:54.188562Z"}
+2019-09-26T08:38:12.460941031Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:38:12.460330Z"}
+2019-09-26T08:38:24.195241986Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:38:24.195160Z"}
+2019-09-26T08:38:42.459930469Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:38:42.459865Z"}
+2019-09-26T08:38:54.193141838Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:38:54.193036Z"}
+2019-09-26T08:39:12.459578492Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:39:12.459484Z"}
+2019-09-26T08:39:24.190128888Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:39:24.190029Z"}
+2019-09-26T08:39:42.458863235Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:39:42.458770Z"}
+2019-09-26T08:39:54.19028786Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:39:54.190196Z"}
+2019-09-26T08:40:12.460938493Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:40:12.460232Z"}
+2019-09-26T08:40:24.189187083Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:40:24.189099Z"}
+2019-09-26T08:40:42.459942678Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:40:42.459482Z"}
+2019-09-26T08:40:54.192617037Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:40:54.192543Z"}
+2019-09-26T08:41:12.459969564Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:41:12.459106Z"}
+2019-09-26T08:41:24.187266692Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:41:24.187164Z"}
+2019-09-26T08:41:42.46201242Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:41:42.461082Z"}
+2019-09-26T08:41:54.187393369Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:41:54.187325Z"}
+2019-09-26T08:42:12.458171063Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:42:12.458100Z"}
+2019-09-26T08:42:24.189045508Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:42:24.188947Z"}
+2019-09-26T08:42:42.458816442Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:42:42.458739Z"}
+2019-09-26T08:42:54.189655317Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:42:54.189584Z"}
+2019-09-26T08:43:12.46054537Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:43:12.460476Z"}
+2019-09-26T08:43:24.190249133Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:43:24.190176Z"}
+2019-09-26T08:43:42.459759601Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:43:42.459668Z"}
+2019-09-26T08:43:54.189958713Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:43:54.189869Z"}
+2019-09-26T08:44:12.474331955Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:44:12.474228Z"}
+2019-09-26T08:44:24.187699878Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:44:24.187628Z"}
+2019-09-26T08:44:42.459895998Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:44:42.459816Z"}
+2019-09-26T08:44:54.188057882Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:44:54.187969Z"}
+2019-09-26T08:45:12.459240723Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:45:12.459160Z"}
+2019-09-26T08:45:24.185948204Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:45:24.185845Z"}
+2019-09-26T08:45:42.465254435Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:45:42.465179Z"}
+2019-09-26T08:45:54.194252728Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:45:54.194181Z"}
+2019-09-26T08:46:12.460639043Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:46:12.460558Z"}
+2019-09-26T08:46:24.190039299Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:46:24.189940Z"}
+2019-09-26T08:46:42.459763091Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:46:42.459666Z"}
+2019-09-26T08:46:54.187785766Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:46:54.187694Z"}
+2019-09-26T08:47:12.461605537Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:47:12.461484Z"}
+2019-09-26T08:47:24.187317572Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:47:24.187189Z"}
+2019-09-26T08:47:42.458816592Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:47:42.458707Z"}
+2019-09-26T08:47:54.187762804Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:47:54.187682Z"}
+2019-09-26T08:48:12.460989151Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:48:12.460463Z"}
+2019-09-26T08:48:24.187048218Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:48:24.186888Z"}
+2019-09-26T08:48:42.461015502Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:48:42.460931Z"}
+2019-09-26T08:48:54.187106859Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:48:54.187013Z"}
+2019-09-26T08:49:12.459329378Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:49:12.459236Z"}
+2019-09-26T08:49:24.191108574Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:49:24.191025Z"}
+2019-09-26T08:49:42.456107551Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:49:42.455968Z"}
+2019-09-26T08:49:54.186754134Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:49:54.186672Z"}
+2019-09-26T08:50:12.457373643Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:50:12.457272Z"}
+2019-09-26T08:50:24.189420529Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:50:24.189304Z"}
+2019-09-26T08:50:42.456580146Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:50:42.456511Z"}
+2019-09-26T08:50:54.197010498Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:50:54.196899Z"}
+2019-09-26T08:51:12.457037958Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:51:12.456960Z"}
+2019-09-26T08:51:24.185956562Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:51:24.185376Z"}
+2019-09-26T08:51:42.455974731Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:51:42.455886Z"}
+2019-09-26T08:51:54.185291627Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:51:54.185216Z"}
+2019-09-26T08:52:12.455657597Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:52:12.455548Z"}
+2019-09-26T08:52:24.184957101Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:52:24.184289Z"}
+2019-09-26T08:52:42.456392626Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:52:42.456302Z"}
+2019-09-26T08:52:54.185030555Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:52:54.184938Z"}
+2019-09-26T08:53:12.457749219Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:53:12.457667Z"}
+2019-09-26T08:53:24.183773352Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:53:24.183683Z"}
+2019-09-26T08:53:42.456129533Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:53:42.456012Z"}
+2019-09-26T08:53:54.18331189Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:53:54.183020Z"}
+2019-09-26T08:54:12.457293149Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:54:12.457199Z"}
+2019-09-26T08:54:24.184567196Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:54:24.184496Z"}
+2019-09-26T08:54:42.456395594Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:54:42.456310Z"}
+2019-09-26T08:54:54.185432682Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:54:54.185357Z"}
+2019-09-26T08:55:12.46972247Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:55:12.469639Z"}
+2019-09-26T08:55:24.184579215Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:55:24.184492Z"}
+2019-09-26T08:55:42.457083056Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:55:42.456995Z"}
+2019-09-26T08:55:54.185404977Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:55:54.185314Z"}
+2019-09-26T08:56:12.457486834Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:56:12.457398Z"}
+2019-09-26T08:56:24.190237389Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:56:24.190148Z"}
+2019-09-26T08:56:42.455989892Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:56:42.455481Z"}
+2019-09-26T08:56:54.188549713Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:56:54.188451Z"}
+2019-09-26T08:57:12.455648534Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:57:12.455569Z"}
+2019-09-26T08:57:24.18916713Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:57:24.189092Z"}
+2019-09-26T08:57:42.465245764Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:57:42.465148Z"}
+2019-09-26T08:57:54.18706054Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:57:54.186949Z"}
+2019-09-26T08:58:12.461486959Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:58:12.461393Z"}
+2019-09-26T08:58:24.189741363Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:58:24.189660Z"}
+2019-09-26T08:58:42.455062908Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:58:42.454945Z"}
+2019-09-26T08:58:54.187650536Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:58:54.187545Z"}
+2019-09-26T08:59:12.466673774Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:59:12.466526Z"}
+2019-09-26T08:59:24.188321177Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:59:24.188179Z"}
+2019-09-26T08:59:42.455958471Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:59:42.455232Z"}
+2019-09-26T08:59:54.186004627Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T08:59:54.185630Z"}
+2019-09-26T09:00:12.46305226Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:00:12.462971Z"}
+2019-09-26T09:00:24.188108746Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:00:24.187572Z"}
+2019-09-26T09:00:42.470036856Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:00:42.469961Z"}
+2019-09-26T09:00:54.189778642Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:00:54.189647Z"}
+2019-09-26T09:01:12.474330999Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:01:12.474247Z"}
+2019-09-26T09:01:24.19071353Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:01:24.190554Z"}
+2019-09-26T09:01:42.466015031Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:01:42.465806Z"}
+2019-09-26T09:01:54.189489439Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:01:54.189412Z"}
+2019-09-26T09:02:12.454009379Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:02:12.453840Z"}
+2019-09-26T09:02:24.183371882Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:02:24.183269Z"}
+2019-09-26T09:02:42.457054904Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:02:42.456962Z"}
+2019-09-26T09:02:54.191615363Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:02:54.191501Z"}
+2019-09-26T09:03:12.471126106Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:03:12.471045Z"}
+2019-09-26T09:03:24.1892474Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:03:24.189115Z"}
+2019-09-26T09:03:42.454300804Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:03:42.454096Z"}
+2019-09-26T09:03:54.184940091Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:03:54.184803Z"}
+2019-09-26T09:04:12.45894387Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:04:12.458537Z"}
+2019-09-26T09:04:24.190005804Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:04:24.189379Z"}
+2019-09-26T09:04:42.453933806Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:04:42.453822Z"}
+2019-09-26T09:04:54.218883837Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:04:54.218800Z"}
+2019-09-26T09:05:12.453345147Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:05:12.453242Z"}
+2019-09-26T09:05:24.182148132Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:05:24.182072Z"}
+2019-09-26T09:05:42.473523678Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:05:42.473420Z"}
+2019-09-26T09:05:54.188039954Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:05:54.187815Z"}
+2019-09-26T09:06:12.452686993Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:06:12.452615Z"}
+2019-09-26T09:06:24.199220899Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:06:24.199067Z"}
+2019-09-26T09:06:42.453752015Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:06:42.453645Z"}
+2019-09-26T09:06:54.184220296Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:06:54.184103Z"}
+2019-09-26T09:07:12.46994719Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:07:12.469860Z"}
+2019-09-26T09:07:24.196019368Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:07:24.195131Z"}
+2019-09-26T09:07:42.457192123Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:07:42.457101Z"}
+2019-09-26T09:07:54.192463132Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:07:54.192322Z"}
+2019-09-26T09:08:12.455706754Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:08:12.455616Z"}
+2019-09-26T09:08:24.190862153Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:08:24.190780Z"}
+2019-09-26T09:08:42.465106011Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:08:42.464964Z"}
+2019-09-26T09:08:54.185001653Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:08:54.184070Z"}
+2019-09-26T09:09:12.4518031Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:09:12.451711Z"}
+2019-09-26T09:09:24.182165293Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:09:24.182029Z"}
+2019-09-26T09:09:42.451945215Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:09:42.451717Z"}
+2019-09-26T09:09:54.182653252Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:09:54.182580Z"}
+2019-09-26T09:10:12.463559456Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:10:12.463490Z"}
+2019-09-26T09:10:24.182191019Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:10:24.182120Z"}
+2019-09-26T09:10:42.451661605Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:10:42.451576Z"}
+2019-09-26T09:10:54.184155926Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:10:54.184068Z"}
+2019-09-26T09:11:12.451467657Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:11:12.451395Z"}
+2019-09-26T09:11:24.181344127Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:11:24.181263Z"}
+2019-09-26T09:11:42.45097275Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:11:42.450886Z"}
+2019-09-26T09:11:54.182997459Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:11:54.182664Z"}
+2019-09-26T09:12:12.45203665Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:12:12.451924Z"}
+2019-09-26T09:12:24.180053813Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:12:24.179988Z"}
+2019-09-26T09:12:42.453548406Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:12:42.453475Z"}
+2019-09-26T09:12:54.181512463Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:12:54.181450Z"}
+2019-09-26T09:13:12.454716589Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:13:12.453026Z"}
+2019-09-26T09:13:24.183245064Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:13:24.183143Z"}
+2019-09-26T09:13:42.45005162Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:13:42.449986Z"}
+2019-09-26T09:13:54.181076711Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:13:54.180879Z"}
+2019-09-26T09:14:12.453472303Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:14:12.453399Z"}
+2019-09-26T09:14:24.179373076Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:14:24.179292Z"}
+2019-09-26T09:14:42.450932093Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:14:42.450840Z"}
+2019-09-26T09:14:54.177941514Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:14:54.177698Z"}
+2019-09-26T09:15:12.456048718Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:15:12.455969Z"}
+2019-09-26T09:15:24.180573779Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:15:24.180473Z"}
+2019-09-26T09:15:42.450243676Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:15:42.450134Z"}
+2019-09-26T09:15:54.183129234Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:15:54.183043Z"}
+2019-09-26T09:16:12.452372638Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:16:12.452233Z"}
+2019-09-26T09:16:24.177749033Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:16:24.177674Z"}
+2019-09-26T09:16:42.455638532Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:16:42.455559Z"}
+2019-09-26T09:16:54.179444325Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:16:54.179289Z"}
+2019-09-26T09:17:12.451364992Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:17:12.451268Z"}
+2019-09-26T09:17:24.18067219Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:17:24.180592Z"}
+2019-09-26T09:17:42.449607019Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:17:42.449504Z"}
+2019-09-26T09:17:54.18192413Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:17:54.181836Z"}
+2019-09-26T09:18:12.455377696Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:18:12.455296Z"}
+2019-09-26T09:18:24.179390009Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:18:24.179293Z"}
+2019-09-26T09:18:42.450576098Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:18:42.450491Z"}
+2019-09-26T09:18:54.182317873Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:18:54.182240Z"}
+2019-09-26T09:19:12.450253195Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:19:12.450166Z"}
+2019-09-26T09:19:24.182372462Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:19:24.182281Z"}
+2019-09-26T09:19:42.451404004Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:19:42.451312Z"}
+2019-09-26T09:19:54.179597121Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:19:54.179510Z"}
+2019-09-26T09:20:12.451347826Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:20:12.451253Z"}
+2019-09-26T09:20:24.177552703Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:20:24.177479Z"}
+2019-09-26T09:20:42.449306461Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:20:42.449168Z"}
+2019-09-26T09:20:54.191960459Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:20:54.191001Z"}
+2019-09-26T09:21:12.448115268Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:21:12.448023Z"}
+2019-09-26T09:21:24.178953138Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:21:24.178541Z"}
+2019-09-26T09:21:42.459160835Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:21:42.459080Z"}
+2019-09-26T09:21:54.177848349Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:21:54.177750Z"}
+2019-09-26T09:22:12.449744276Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:22:12.449654Z"}
+2019-09-26T09:22:24.178939958Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:22:24.178842Z"}
+2019-09-26T09:22:42.447773255Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:22:42.447646Z"}
+2019-09-26T09:22:54.178946263Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:22:54.178345Z"}
+2019-09-26T09:23:12.449687696Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:23:12.449435Z"}
+2019-09-26T09:23:24.180780919Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:23:24.180692Z"}
+2019-09-26T09:23:42.450090678Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:23:42.450007Z"}
+2019-09-26T09:23:54.17743885Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:23:54.177352Z"}
+2019-09-26T09:24:12.45403655Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:24:12.452997Z"}
+2019-09-26T09:24:24.178277326Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:24:24.178179Z"}
+2019-09-26T09:24:42.45094125Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:24:42.450849Z"}
+2019-09-26T09:24:54.182785212Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:24:54.182692Z"}
+2019-09-26T09:25:12.448943236Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:25:12.448851Z"}
+2019-09-26T09:25:24.178072167Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:25:24.177890Z"}
+2019-09-26T09:25:42.451450416Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:25:42.451367Z"}
+2019-09-26T09:25:54.17702378Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:25:54.176956Z"}
+2019-09-26T09:26:12.447151918Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:26:12.447066Z"}
+2019-09-26T09:26:24.180952022Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:26:24.180059Z"}
+2019-09-26T09:26:42.45582908Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:26:42.455717Z"}
+2019-09-26T09:26:54.181465412Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:26:54.181373Z"}
+2019-09-26T09:27:12.447359198Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:27:12.447280Z"}
+2019-09-26T09:27:24.178193848Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:27:24.178078Z"}
+2019-09-26T09:27:42.447994646Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:27:42.447867Z"}
+2019-09-26T09:27:54.17770976Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:27:54.177636Z"}
+2019-09-26T09:28:12.447684916Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:28:12.447558Z"}
+2019-09-26T09:28:24.180328132Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:28:24.180180Z"}
+2019-09-26T09:28:42.448585998Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:28:42.448474Z"}
+2019-09-26T09:28:54.179206462Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:28:54.179102Z"}
+2019-09-26T09:29:12.44719138Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:29:12.447103Z"}
+2019-09-26T09:29:24.179953621Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:29:24.179857Z"}
+2019-09-26T09:29:42.454842796Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:29:42.454774Z"}
+2019-09-26T09:29:54.176194441Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:29:54.176107Z"}
+2019-09-26T09:30:12.446904292Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:30:12.446793Z"}
+2019-09-26T09:30:24.177364599Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:30:24.177248Z"}
+2019-09-26T09:30:42.448728592Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:30:42.448653Z"}
+2019-09-26T09:30:54.179964398Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:30:54.179084Z"}
+2019-09-26T09:31:12.445410562Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:31:12.445329Z"}
+2019-09-26T09:31:24.17833657Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:31:24.178234Z"}
+2019-09-26T09:31:42.447105334Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:31:42.447012Z"}
+2019-09-26T09:31:54.176942994Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:31:54.176838Z"}
+2019-09-26T09:32:12.445671662Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:32:12.445587Z"}
+2019-09-26T09:32:24.175357596Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:32:24.175255Z"}
+2019-09-26T09:32:42.445008698Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:32:42.444880Z"}
+2019-09-26T09:32:54.175013319Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:32:54.174102Z"}
+2019-09-26T09:33:12.448052003Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:33:12.447973Z"}
+2019-09-26T09:33:24.174194094Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:33:24.174104Z"}
+2019-09-26T09:33:42.446950943Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:33:42.446177Z"}
+2019-09-26T09:33:54.174948439Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:33:54.174550Z"}
+2019-09-26T09:34:12.449472521Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:34:12.449364Z"}
+2019-09-26T09:34:24.177388484Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:34:24.177232Z"}
+2019-09-26T09:34:42.45753181Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:34:42.456903Z"}
+2019-09-26T09:34:54.174939781Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:34:54.174776Z"}
+2019-09-26T09:35:12.451361694Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:35:12.451259Z"}
+2019-09-26T09:35:24.176737382Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:35:24.176639Z"}
+2019-09-26T09:35:42.444495791Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:35:42.444370Z"}
+2019-09-26T09:35:54.180513794Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:35:54.177532Z"}
+2019-09-26T09:36:12.446941937Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:36:12.446194Z"}
+2019-09-26T09:36:24.176981897Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:36:24.176327Z"}
+2019-09-26T09:36:42.460015985Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:36:42.459868Z"}
+2019-09-26T09:36:54.175958588Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:36:54.175609Z"}
+2019-09-26T09:37:12.447964285Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:37:12.447555Z"}
+2019-09-26T09:37:24.176968976Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:37:24.176069Z"}
+2019-09-26T09:37:42.446091151Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:37:42.446009Z"}
+2019-09-26T09:37:54.18098891Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:37:54.180851Z"}
+2019-09-26T09:38:12.444152048Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:38:12.444057Z"}
+2019-09-26T09:38:24.180763405Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:38:24.180687Z"}
+2019-09-26T09:38:42.444657922Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:38:42.444567Z"}
+2019-09-26T09:38:54.174985711Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:38:54.174215Z"}
+2019-09-26T09:39:12.445362533Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:39:12.445278Z"}
+2019-09-26T09:39:24.174094226Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:39:24.174012Z"}
+2019-09-26T09:39:42.447959095Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:39:42.446930Z"}
+2019-09-26T09:39:54.177939732Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:39:54.177832Z"}
+2019-09-26T09:40:12.447955363Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:40:12.447449Z"}
+2019-09-26T09:40:24.174314285Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:40:24.174219Z"}
+2019-09-26T09:40:42.445351352Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:40:42.445189Z"}
+2019-09-26T09:40:54.181882227Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:40:54.181791Z"}
+2019-09-26T09:41:12.457567569Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:41:12.457463Z"}
+2019-09-26T09:41:24.17339495Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:41:24.172899Z"}
+2019-09-26T09:41:42.444406549Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:41:42.444312Z"}
+2019-09-26T09:41:54.174700662Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:41:54.174545Z"}
+2019-09-26T09:42:13.421418092Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:42:13.421296Z"}
+2019-09-26T09:42:24.172971065Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:42:24.172214Z"}
+2019-09-26T09:42:42.448231392Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:42:42.448112Z"}
+2019-09-26T09:42:54.186222305Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:42:54.186082Z"}
+2019-09-26T09:43:12.444870719Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:43:12.444748Z"}
+2019-09-26T09:43:24.171763404Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:43:24.171686Z"}
+2019-09-26T09:43:42.443502545Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:43:42.443061Z"}
+2019-09-26T09:43:54.17097278Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:43:54.170896Z"}
+2019-09-26T09:44:12.445562863Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:44:12.445479Z"}
+2019-09-26T09:44:24.180830629Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:44:24.180732Z"}
+2019-09-26T09:44:42.444458889Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:44:42.444387Z"}
+2019-09-26T09:44:54.172443137Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:44:54.172360Z"}
+2019-09-26T09:45:12.44300787Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:45:12.442897Z"}
+2019-09-26T09:45:24.172706827Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:45:24.172629Z"}
+2019-09-26T09:45:42.442652383Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:45:42.442565Z"}
+2019-09-26T09:45:54.174365845Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:45:54.174295Z"}
+2019-09-26T09:46:12.455246957Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:46:12.455149Z"}
+2019-09-26T09:46:24.172635406Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:46:24.172558Z"}
+2019-09-26T09:46:42.448155524Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:46:42.447927Z"}
+2019-09-26T09:46:54.171773998Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:46:54.170178Z"}
+2019-09-26T09:47:12.450719622Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:47:12.450589Z"}
+2019-09-26T09:47:24.171929784Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:47:24.171833Z"}
+2019-09-26T09:47:42.445765712Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:47:42.445665Z"}
+2019-09-26T09:47:54.172334839Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:47:54.172269Z"}
+2019-09-26T09:48:12.442378991Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:48:12.442287Z"}
+2019-09-26T09:48:24.173473898Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:48:24.173387Z"}
+2019-09-26T09:48:42.443900741Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:48:42.443788Z"}
+2019-09-26T09:48:54.171894948Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:48:54.170872Z"}
+2019-09-26T09:49:12.447593878Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:49:12.447503Z"}
+2019-09-26T09:49:24.171592098Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:49:24.171504Z"}
+2019-09-26T09:49:42.440951722Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:49:42.440843Z"}
+2019-09-26T09:49:54.185267917Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:49:54.185139Z"}
+2019-09-26T09:50:12.441938614Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:50:12.441836Z"}
+2019-09-26T09:50:24.171542139Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:50:24.171446Z"}
+2019-09-26T09:50:42.442819728Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:50:42.442735Z"}
+2019-09-26T09:50:54.171385066Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:50:54.171312Z"}
+2019-09-26T09:51:12.441850968Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:51:12.441636Z"}
+2019-09-26T09:51:24.169938148Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:51:24.169668Z"}
+2019-09-26T09:51:42.442037538Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:51:42.441896Z"}
+2019-09-26T09:51:54.190944494Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:51:54.190053Z"}
+2019-09-26T09:52:12.442942099Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:52:12.441966Z"}
+2019-09-26T09:52:24.172946678Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:52:24.172313Z"}
+2019-09-26T09:52:42.450431509Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:52:42.450347Z"}
+2019-09-26T09:52:54.172959093Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:52:54.172676Z"}
+2019-09-26T09:53:12.451502542Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:53:12.451402Z"}
+2019-09-26T09:53:24.168965407Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:53:24.168874Z"}
+2019-09-26T09:53:42.440378316Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:53:42.440300Z"}
+2019-09-26T09:53:54.173497662Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:53:54.173407Z"}
+2019-09-26T09:54:12.444870573Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:54:12.444782Z"}
+2019-09-26T09:54:24.173372218Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:54:24.173259Z"}
+2019-09-26T09:54:42.439399918Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:54:42.439314Z"}
+2019-09-26T09:54:54.171805183Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:54:54.171715Z"}
+2019-09-26T09:55:12.440223239Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:55:12.440135Z"}
+2019-09-26T09:55:24.170973382Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:55:24.170281Z"}
+2019-09-26T09:55:42.444062407Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:55:42.443948Z"}
+2019-09-26T09:55:54.173296344Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:55:54.173208Z"}
+2019-09-26T09:56:12.440225138Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:56:12.440151Z"}
+2019-09-26T09:56:24.172945076Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:56:24.172624Z"}
+2019-09-26T09:56:42.440957088Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:56:42.440573Z"}
+2019-09-26T09:56:54.169960934Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:56:54.169539Z"}
+2019-09-26T09:57:12.440017979Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:57:12.439874Z"}
+2019-09-26T09:57:24.171952524Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:57:24.171630Z"}
+2019-09-26T09:57:42.441012483Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:57:42.440895Z"}
+2019-09-26T09:57:54.167106956Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:57:54.167027Z"}
+2019-09-26T09:58:12.445256446Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:58:12.445157Z"}
+2019-09-26T09:58:24.170618712Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:58:24.170545Z"}
+2019-09-26T09:58:42.440063527Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:58:42.439984Z"}
+2019-09-26T09:58:54.17094318Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:58:54.170825Z"}
+2019-09-26T09:59:12.441974818Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:59:12.441862Z"}
+2019-09-26T09:59:24.169900972Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:59:24.168965Z"}
+2019-09-26T09:59:42.451959044Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:59:42.451834Z"}
+2019-09-26T09:59:54.16944978Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T09:59:54.169390Z"}
+2019-09-26T10:00:12.447256758Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:00:12.447166Z"}
+2019-09-26T10:00:24.170182845Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:00:24.170094Z"}
+2019-09-26T10:00:42.440476937Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:00:42.440120Z"}
+2019-09-26T10:00:54.168524732Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:00:54.168450Z"}
+2019-09-26T10:01:12.448024954Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:01:12.447947Z"}
+2019-09-26T10:01:24.171027461Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:01:24.170957Z"}
+2019-09-26T10:01:42.442001542Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:01:42.441655Z"}
+2019-09-26T10:01:54.168927572Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:01:54.168749Z"}
+2019-09-26T10:02:12.447948767Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:02:12.447803Z"}
+2019-09-26T10:02:24.167946521Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:02:24.167338Z"}
+2019-09-26T10:02:42.442892641Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:02:42.442813Z"}
+2019-09-26T10:02:54.16785107Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:02:54.167070Z"}
+2019-09-26T10:03:12.440558772Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:03:12.440483Z"}
+2019-09-26T10:03:24.167372203Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:03:24.167277Z"}
+2019-09-26T10:03:42.439949585Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:03:42.439820Z"}
+2019-09-26T10:03:54.167493879Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:03:54.167411Z"}
+2019-09-26T10:04:12.43758739Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:04:12.437512Z"}
+2019-09-26T10:04:24.167967025Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:04:24.167725Z"}
+2019-09-26T10:04:42.438526085Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:04:42.438446Z"}
+2019-09-26T10:04:54.17609525Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:04:54.176003Z"}
+2019-09-26T10:05:12.441083386Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:05:12.440990Z"}
+2019-09-26T10:05:24.168969237Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:05:24.168233Z"}
+2019-09-26T10:05:42.441683821Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:05:42.441104Z"}
+2019-09-26T10:05:54.165978312Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:05:54.165874Z"}
+2019-09-26T10:06:12.438050678Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:06:12.437965Z"}
+2019-09-26T10:06:24.167352342Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:06:24.167177Z"}
+2019-09-26T10:06:42.444419286Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:06:42.444336Z"}
+2019-09-26T10:06:54.16653894Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:06:54.166463Z"}
+2019-09-26T10:07:12.438302062Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:07:12.438210Z"}
+2019-09-26T10:07:24.166806125Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:07:24.166692Z"}
+2019-09-26T10:07:42.445224915Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:07:42.445152Z"}
+2019-09-26T10:07:54.168113249Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:07:54.168018Z"}
+2019-09-26T10:08:12.439335827Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:08:12.439251Z"}
+2019-09-26T10:08:24.167053275Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:08:24.166975Z"}
+2019-09-26T10:08:42.442243716Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:08:42.442158Z"}
+2019-09-26T10:08:54.166118056Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:08:54.166027Z"}
+2019-09-26T10:09:12.436944304Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:09:12.436750Z"}
+2019-09-26T10:09:24.165241224Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:09:24.165114Z"}
+2019-09-26T10:09:42.439945532Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:09:42.439713Z"}
+2019-09-26T10:09:54.16862029Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:09:54.168524Z"}
+2019-09-26T10:10:12.439959336Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:10:12.438936Z"}
+2019-09-26T10:10:24.169492596Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:10:24.169385Z"}
+2019-09-26T10:10:42.445987948Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:10:42.445724Z"}
+2019-09-26T10:10:54.164874342Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:10:54.164755Z"}
+2019-09-26T10:11:12.457503776Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:11:12.457368Z"}
+2019-09-26T10:11:24.168957574Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:11:24.168652Z"}
+2019-09-26T10:11:53.433235951Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:11:53.433135Z"}
+2019-09-26T10:11:54.170953583Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:11:54.170159Z"}
+2019-09-26T10:12:12.471053933Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:12:12.469965Z"}
+2019-09-26T10:12:24.16444565Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:12:24.164304Z"}
+2019-09-26T10:12:42.436942566Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:12:42.436809Z"}
+2019-09-26T10:12:54.17327148Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:12:54.173208Z"}
+2019-09-26T10:13:24.169211711Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:13:24.169144Z"}
+2019-09-26T10:13:54.167502412Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:13:54.167395Z"}
+2019-09-26T10:14:24.174949234Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:14:24.174850Z"}
+2019-09-26T10:14:54.164030049Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:14:54.163949Z"}
+2019-09-26T10:15:21.580165923Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:15:21.580078Z"}
+2019-09-26T10:15:24.1678282Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:15:24.167758Z"}
+2019-09-26T10:15:54.168785725Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:15:54.168619Z"}
+2019-09-26T10:16:00.942427525Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:16:00.942339Z"}
+2019-09-26T10:16:12.43678937Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:16:12.436725Z"}
+2019-09-26T10:16:24.171506204Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:16:24.171432Z"}
+2019-09-26T10:16:54.167402712Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:16:54.167285Z"}
+2019-09-26T10:16:59.573477937Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:16:59.573190Z"}
+2019-09-26T10:17:24.163682943Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:17:24.163554Z"}
+2019-09-26T10:17:54.171978094Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:17:54.170985Z"}
+2019-09-26T10:18:12.635138414Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:18:12.635058Z"}
+2019-09-26T10:18:14.629790843Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:18:14.629684Z"}
+2019-09-26T10:18:24.165128182Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:18:24.165034Z"}
+2019-09-26T10:18:54.167151942Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:18:54.167090Z"}
+2019-09-26T10:19:09.741765177Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:19:09.741637Z"}
+2019-09-26T10:19:21.115691541Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:19:21.115602Z"}
+2019-09-26T10:19:24.165352388Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:19:24.165261Z"}
+2019-09-26T10:19:54.164794564Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:19:54.164685Z"}
+2019-09-26T10:20:24.163340842Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:20:24.163254Z"}
+2019-09-26T10:20:45.662089667Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:20:45.662014Z"}
+2019-09-26T10:20:54.16121651Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:20:54.161111Z"}
+2019-09-26T10:21:24.163226503Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:21:24.163149Z"}
+2019-09-26T10:21:33.322372125Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:21:33.322303Z"}
+2019-09-26T10:21:45.416232694Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:21:45.416141Z"}
+2019-09-26T10:21:54.16532352Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:21:54.165220Z"}
+2019-09-26T10:22:24.162793926Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:22:24.162698Z"}
+2019-09-26T10:22:36.482635133Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:22:36.482546Z"}
+2019-09-26T10:22:50.050130614Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:22:50.050009Z"}
+2019-09-26T10:22:54.163765753Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:22:54.163654Z"}
+2019-09-26T10:23:12.54423872Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:23:12.544146Z"}
+2019-09-26T10:23:24.164640763Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:23:24.164547Z"}
+2019-09-26T10:23:54.161945171Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:23:54.161833Z"}
+2019-09-26T10:24:24.1631728Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:24:24.163027Z"}
+2019-09-26T10:24:51.586960414Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:24:51.586328Z"}
+2019-09-26T10:24:54.161153022Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:24:54.161048Z"}
+2019-09-26T10:25:24.163797265Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:25:24.163713Z"}
+2019-09-26T10:25:42.780626193Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:25:42.780548Z"}
+2019-09-26T10:25:54.163992862Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:25:54.163697Z"}
+2019-09-26T10:26:24.162242616Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:26:24.160951Z"}
+2019-09-26T10:26:54.161310466Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:26:54.161233Z"}
+2019-09-26T10:27:24.164104731Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:27:24.164014Z"}
+2019-09-26T10:27:54.163780683Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:27:54.163689Z"}
+2019-09-26T10:28:24.162338534Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:28:24.162231Z"}
+2019-09-26T10:28:54.161985924Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:28:54.161791Z"}
+2019-09-26T10:29:18.310974025Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:29:18.310435Z"}
+2019-09-26T10:29:24.163154924Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:29:24.163073Z"}
+2019-09-26T10:29:42.453011205Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:29:42.452937Z"}
+2019-09-26T10:29:54.168367937Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:29:54.168281Z"}
+2019-09-26T10:30:24.164982914Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:30:24.162456Z"}
+2019-09-26T10:30:41.175570364Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:30:41.175464Z"}
+2019-09-26T10:30:54.161192749Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:30:54.161104Z"}
+2019-09-26T10:31:11.173286168Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:31:11.173189Z"}
+2019-09-26T10:31:24.164306825Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:31:24.164238Z"}
+2019-09-26T10:31:41.170941821Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:31:41.170833Z"}
+2019-09-26T10:31:54.159554615Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:31:54.159459Z"}
+2019-09-26T10:32:11.17894853Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:32:11.178508Z"}
+2019-09-26T10:32:24.162375328Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:32:24.162253Z"}
+2019-09-26T10:32:41.170811371Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:32:41.170739Z"}
+2019-09-26T10:32:54.161242595Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:32:54.161130Z"}
+2019-09-26T10:33:11.173001721Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:33:11.172890Z"}
+2019-09-26T10:33:24.160456323Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:33:24.160358Z"}
+2019-09-26T10:33:41.174256961Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:33:41.174135Z"}
+2019-09-26T10:33:54.161642011Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:33:54.161564Z"}
+2019-09-26T10:34:11.172096445Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:34:11.172018Z"}
+2019-09-26T10:34:24.165939034Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:34:24.165093Z"}
+2019-09-26T10:34:41.171409297Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:34:41.171331Z"}
+2019-09-26T10:34:54.162944468Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:34:54.162291Z"}
+2019-09-26T10:35:11.172322812Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:35:11.172205Z"}
+2019-09-26T10:35:24.15810804Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:35:24.158025Z"}
+2019-09-26T10:35:41.172945307Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:35:41.172494Z"}
+2019-09-26T10:35:54.16298419Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:35:54.161885Z"}
+2019-09-26T10:36:11.175939393Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:36:11.175127Z"}
+2019-09-26T10:36:24.160254674Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:36:24.160147Z"}
+2019-09-26T10:36:41.174261334Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:36:41.174162Z"}
+2019-09-26T10:36:54.174889453Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:36:54.174643Z"}
+2019-09-26T10:37:11.171772888Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:37:11.171691Z"}
+2019-09-26T10:37:24.162342236Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:37:24.162228Z"}
+2019-09-26T10:37:41.171945854Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:37:41.171765Z"}
+2019-09-26T10:37:54.161775379Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:37:54.160423Z"}
+2019-09-26T10:38:11.179683039Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:38:11.179580Z"}
+2019-09-26T10:38:24.159413423Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:38:24.159298Z"}
+2019-09-26T10:38:41.176154066Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:38:41.176050Z"}
+2019-09-26T10:38:54.158393454Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:38:54.158282Z"}
+2019-09-26T10:39:11.173058268Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:39:11.172966Z"}
+2019-09-26T10:39:24.159930244Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:39:24.159827Z"}
+2019-09-26T10:39:41.171785145Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:39:41.171673Z"}
+2019-09-26T10:39:54.160558131Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:39:54.160484Z"}
+2019-09-26T10:40:11.177463157Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:40:11.177362Z"}
+2019-09-26T10:40:24.157949281Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:40:24.157635Z"}
+2019-09-26T10:40:41.177631965Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:40:41.177428Z"}
+2019-09-26T10:40:54.158948634Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:40:54.158850Z"}
+2019-09-26T10:41:11.171197564Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:41:11.171120Z"}
+2019-09-26T10:41:24.158948676Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:41:24.158798Z"}
+2019-09-26T10:41:41.172442464Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:41:41.172358Z"}
+2019-09-26T10:41:54.160219256Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:41:54.160145Z"}
+2019-09-26T10:42:11.172942369Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:42:11.172816Z"}
+2019-09-26T10:42:24.158128293Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:42:24.158042Z"}
+2019-09-26T10:42:41.172940074Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:42:41.172831Z"}
+2019-09-26T10:42:54.158680941Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:42:54.158582Z"}
+2019-09-26T10:43:11.175199329Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:43:11.175090Z"}
+2019-09-26T10:43:24.159958227Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:43:24.159125Z"}
+2019-09-26T10:43:41.171063386Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:43:41.170971Z"}
+2019-09-26T10:43:54.156966222Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:43:54.156362Z"}
+2019-09-26T10:44:11.173965832Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:44:11.173881Z"}
+2019-09-26T10:44:24.172222079Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:44:24.172150Z"}
+2019-09-26T10:44:41.173025938Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:44:41.172949Z"}
+2019-09-26T10:44:54.157355468Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:44:54.157258Z"}
+2019-09-26T10:45:11.176945189Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:45:11.176511Z"}
+2019-09-26T10:45:24.158239304Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:45:24.158098Z"}
+2019-09-26T10:45:41.172241449Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:45:41.172165Z"}
+2019-09-26T10:45:54.156628295Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:45:54.156527Z"}
+2019-09-26T10:46:11.172487309Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:46:11.172413Z"}
+2019-09-26T10:46:24.157583078Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:46:24.157481Z"}
+2019-09-26T10:46:41.171667116Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:46:41.171599Z"}
+2019-09-26T10:46:54.156790067Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:46:54.156700Z"}
+2019-09-26T10:47:11.176758481Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:47:11.176635Z"}
+2019-09-26T10:47:24.156962375Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:47:24.156223Z"}
+2019-09-26T10:47:41.179278271Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:47:41.179187Z"}
+2019-09-26T10:47:54.159387723Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:47:54.159311Z"}
+2019-09-26T10:48:11.186952465Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:48:11.185990Z"}
+2019-09-26T10:48:24.156502562Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:48:24.156381Z"}
+2019-09-26T10:48:41.172969948Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:48:41.172438Z"}
+2019-09-26T10:48:54.156182564Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:48:54.156099Z"}
+2019-09-26T10:49:11.172784318Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:49:11.172704Z"}
+2019-09-26T10:49:24.158128032Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:49:24.158016Z"}
+2019-09-26T10:49:41.182942947Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:49:41.182706Z"}
+2019-09-26T10:49:54.156406599Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:49:54.156341Z"}
+2019-09-26T10:50:11.171837502Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:50:11.171757Z"}
+2019-09-26T10:50:24.156934704Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:50:24.156680Z"}
+2019-09-26T10:50:41.181766149Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:50:41.181675Z"}
+2019-09-26T10:50:54.156942418Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:50:54.156519Z"}
+2019-09-26T10:51:11.172939912Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:51:11.172239Z"}
+2019-09-26T10:51:24.157405275Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:51:24.157330Z"}
+2019-09-26T10:51:41.172949543Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:51:41.172567Z"}
+2019-09-26T10:51:54.155833777Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:51:54.155745Z"}
+2019-09-26T10:52:11.171932335Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:52:11.171817Z"}
+2019-09-26T10:52:24.157072643Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:52:24.156966Z"}
+2019-09-26T10:52:41.172227334Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:52:41.172150Z"}
+2019-09-26T10:52:54.156734347Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:52:54.156650Z"}
+2019-09-26T10:53:11.173942439Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:53:11.173026Z"}
+2019-09-26T10:53:24.155268845Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:53:24.155143Z"}
+2019-09-26T10:53:41.172045092Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:53:41.171956Z"}
+2019-09-26T10:53:54.159954633Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:53:54.159388Z"}
+2019-09-26T10:54:11.175166644Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:54:11.173869Z"}
+2019-09-26T10:54:24.154266291Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:54:24.154153Z"}
+2019-09-26T10:54:41.176960833Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:54:41.176035Z"}
+2019-09-26T10:54:54.160765193Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:54:54.160668Z"}
+2019-09-26T10:55:11.171954185Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:55:11.171716Z"}
+2019-09-26T10:55:24.155349009Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:55:24.155279Z"}
+2019-09-26T10:55:41.175193562Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:55:41.173898Z"}
+2019-09-26T10:55:54.155788038Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:55:54.155698Z"}
+2019-09-26T10:56:11.174961957Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:56:11.174637Z"}
+2019-09-26T10:56:24.153825864Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:56:24.153714Z"}
+2019-09-26T10:56:41.184177659Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:56:41.184003Z"}
+2019-09-26T10:56:54.155272677Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:56:54.155131Z"}
+2019-09-26T10:57:11.17395813Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:57:11.173217Z"}
+2019-09-26T10:57:24.154352819Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:57:24.154271Z"}
+2019-09-26T10:57:41.179048767Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:57:41.178935Z"}
+2019-09-26T10:57:54.153862139Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:57:54.153764Z"}
+2019-09-26T10:58:11.174969596Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:58:11.174484Z"}
+2019-09-26T10:58:24.154787973Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:58:24.154690Z"}
+2019-09-26T10:58:41.171951737Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:58:41.171558Z"}
+2019-09-26T10:58:54.155148708Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:58:54.155055Z"}
+2019-09-26T10:59:11.171955408Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:59:11.171793Z"}
+2019-09-26T10:59:24.156806468Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:59:24.156700Z"}
+2019-09-26T10:59:41.181216202Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:59:41.181139Z"}
+2019-09-26T10:59:54.158010662Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T10:59:54.157942Z"}
+2019-09-26T11:00:11.184354634Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:00:11.184268Z"}
+2019-09-26T11:00:24.153216923Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:00:24.153141Z"}
+2019-09-26T11:00:41.177506313Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:00:41.177403Z"}
+2019-09-26T11:00:54.1533886Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:00:54.153263Z"}
+2019-09-26T11:01:11.173648501Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:01:11.173513Z"}
+2019-09-26T11:01:24.165135207Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:01:24.164993Z"}
+2019-09-26T11:01:41.173865949Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:01:41.173774Z"}
+2019-09-26T11:01:54.154994758Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:01:54.154889Z"}
+2019-09-26T11:02:11.174786041Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:02:11.174676Z"}
+2019-09-26T11:02:24.156400788Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:02:24.156312Z"}
+2019-09-26T11:02:41.179947273Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:02:41.179230Z"}
+2019-09-26T11:02:54.153951858Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:02:54.153845Z"}
+2019-09-26T11:03:11.172417046Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:03:11.172329Z"}
+2019-09-26T11:03:24.155192979Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:03:24.155080Z"}
+2019-09-26T11:03:41.188094083Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:03:41.187996Z"}
+2019-09-26T11:03:54.155699502Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:03:54.155599Z"}
+2019-09-26T11:04:11.177086977Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:04:11.176966Z"}
+2019-09-26T11:04:24.155178164Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:04:24.155083Z"}
+2019-09-26T11:04:41.171984107Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:04:41.171876Z"}
+2019-09-26T11:04:54.153270971Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:04:54.153186Z"}
+2019-09-26T11:05:11.173980211Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:05:11.173893Z"}
+2019-09-26T11:05:24.153603794Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:05:24.153507Z"}
+2019-09-26T11:05:41.173400019Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:05:41.173290Z"}
+2019-09-26T11:05:54.161178947Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:05:54.161076Z"}
+2019-09-26T11:06:11.17306869Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:06:11.173001Z"}
+2019-09-26T11:06:24.153323122Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:06:24.153214Z"}
+2019-09-26T11:06:41.180819146Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:06:41.180729Z"}
+2019-09-26T11:06:54.152244575Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:06:54.152170Z"}
+2019-09-26T11:07:11.172958673Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:07:11.172243Z"}
+2019-09-26T11:07:24.153234324Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:07:24.153148Z"}
+2019-09-26T11:07:41.175411514Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:07:41.175298Z"}
+2019-09-26T11:07:54.15282085Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:07:54.152735Z"}
+2019-09-26T11:08:11.173612608Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:08:11.173374Z"}
+2019-09-26T11:08:24.153830843Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:08:24.153745Z"}
+2019-09-26T11:08:41.17332855Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:08:41.173248Z"}
+2019-09-26T11:08:54.152629447Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:08:54.152534Z"}
+2019-09-26T11:09:11.176513246Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:09:11.176407Z"}
+2019-09-26T11:09:24.154681463Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:09:24.154595Z"}
+2019-09-26T11:09:41.171811401Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:09:41.171718Z"}
+2019-09-26T11:09:54.156362323Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:09:54.156270Z"}
+2019-09-26T11:10:11.173893167Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:10:11.173784Z"}
+2019-09-26T11:10:24.152369281Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:10:24.152296Z"}
+2019-09-26T11:10:41.181959233Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:10:41.181816Z"}
+2019-09-26T11:10:54.15495353Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:10:54.154060Z"}
+2019-09-26T11:11:11.173015737Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:11:11.172197Z"}
+2019-09-26T11:11:24.152864513Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:11:24.152747Z"}
+2019-09-26T11:11:41.173940989Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:11:41.173265Z"}
+2019-09-26T11:11:54.163044711Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:11:54.162946Z"}
+2019-09-26T11:12:11.177118169Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:12:11.177038Z"}
+2019-09-26T11:12:24.153968858Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:12:24.153259Z"}
+2019-09-26T11:12:41.171886464Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:12:41.171759Z"}
+2019-09-26T11:12:54.15745867Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:12:54.156220Z"}
+2019-09-26T11:13:11.173943958Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:13:11.173750Z"}
+2019-09-26T11:13:24.156972382Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:13:24.156449Z"}
+2019-09-26T11:13:41.174680403Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:13:41.174544Z"}
+2019-09-26T11:13:54.150524234Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:13:54.150410Z"}
+2019-09-26T11:14:11.172533867Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:14:11.172464Z"}
+2019-09-26T11:14:24.151957099Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:14:24.151836Z"}
+2019-09-26T11:14:41.174209915Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:14:41.174128Z"}
+2019-09-26T11:14:54.163951204Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:14:54.163447Z"}
+2019-09-26T11:15:11.176243035Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:15:11.176162Z"}
+2019-09-26T11:15:24.150938641Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:15:24.150151Z"}
+2019-09-26T11:15:41.182009757Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:15:41.181867Z"}
+2019-09-26T11:15:54.158845137Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:15:54.158740Z"}
+2019-09-26T11:16:11.173948077Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:16:11.173118Z"}
+2019-09-26T11:16:24.153283601Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:16:24.153205Z"}
+2019-09-26T11:16:41.19108152Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:16:41.190849Z"}
+2019-09-26T11:16:54.150111873Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:16:54.150039Z"}
+2019-09-26T11:17:11.173758954Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:17:11.173663Z"}
+2019-09-26T11:17:24.155213142Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:17:24.155120Z"}
+2019-09-26T11:17:41.182257058Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:17:41.180878Z"}
+2019-09-26T11:17:54.161824386Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:17:54.161758Z"}
+2019-09-26T11:18:11.178343513Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:18:11.178245Z"}
+2019-09-26T11:18:24.151766985Z {"component":"virt-handler","level":"info","msg":"No VMIs detected","pos":"prometheus.go:446","timestamp":"2019-09-26T11:18:24.151694Z"}
+2019-09-26T11:18:35.038140756Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type ADDED","pos":"server.go:77","timestamp":"2019-09-26T11:18:35.037926Z"}
+2019-09-26T11:18:35.038140756Z {"component":"virt-handler","kind":"Domain","level":"info","msg":"Domain is in state Paused reason StartingUp","name":"rhel8","namespace":"default","pos":"vm.go:1502","timestamp":"2019-09-26T11:18:35.038026Z","uid":"3600460a-e04f-11e9-aab2-fa163e8db483"}
+2019-09-26T11:18:35.039067656Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:18:35.038985Z"}
+2019-09-26T11:18:35.813999862Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:18:35.813807Z"}
+2019-09-26T11:18:35.824158732Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:18:35.823741Z"}
+2019-09-26T11:18:35.824158732Z {"component":"virt-handler","kind":"Domain","level":"info","msg":"Domain is in state Running reason Unknown","name":"rhel8","namespace":"default","pos":"vm.go:1533","timestamp":"2019-09-26T11:18:35.823861Z","uid":"3600460a-e04f-11e9-aab2-fa163e8db483"}
+2019-09-26T11:18:35.833374457Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:18:35.833107Z"}
+2019-09-26T11:18:41.19700512Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:18:41.196333Z"}
+2019-09-26T11:18:54.16909823Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:18:54.164775Z"}
+2019-09-26T11:19:11.192939873Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:19:11.192626Z"}
+2019-09-26T11:19:24.164867541Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:19:24.164778Z"}
+2019-09-26T11:19:41.189053048Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:19:41.186517Z"}
+2019-09-26T11:19:43.050138349Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:19:43.048270Z"}
+2019-09-26T11:19:54.16839115Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:19:54.168290Z"}
+2019-09-26T11:20:11.19098377Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:20:11.188781Z"}
+2019-09-26T11:20:24.161012866Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:20:24.160239Z"}
+2019-09-26T11:20:41.203702328Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:20:41.203302Z"}
+2019-09-26T11:20:43.061543148Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:20:43.061413Z"}
+2019-09-26T11:20:43.062239612Z {"component":"virt-handler","level":"info","msg":"Received Domain Event of type MODIFIED","pos":"server.go:77","timestamp":"2019-09-26T11:20:43.062143Z"}
+2019-09-26T11:20:54.160883401Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:20:54.160800Z"}
+2019-09-26T11:21:11.191548774Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:21:11.189533Z"}
+2019-09-26T11:21:24.175557339Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:21:24.175487Z"}
+2019-09-26T11:21:41.178377685Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:21:41.178274Z"}
+2019-09-26T11:21:54.159366912Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:21:54.159237Z"}
+2019-09-26T11:22:11.183339907Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:22:11.183219Z"}
+2019-09-26T11:22:24.165855488Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:22:24.165772Z"}
+2019-09-26T11:22:41.18483041Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:22:41.184753Z"}
+2019-09-26T11:22:54.165085234Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:22:54.164191Z"}
+2019-09-26T11:23:11.182987783Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:23:11.182655Z"}
+2019-09-26T11:23:24.155548723Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:23:24.155431Z"}
+2019-09-26T11:23:41.185352736Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:23:41.185257Z"}
+2019-09-26T11:23:54.159702001Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:23:54.159541Z"}
+2019-09-26T11:24:11.181977105Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:24:11.181230Z"}
+2019-09-26T11:24:24.163132236Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:24:24.163041Z"}
+2019-09-26T11:24:41.190022384Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:24:41.189807Z"}
+2019-09-26T11:24:54.15380397Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:24:54.153658Z"}
+2019-09-26T11:25:11.201485367Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:25:11.201228Z"}
+2019-09-26T11:25:24.156962843Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:25:24.156619Z"}
+2019-09-26T11:25:41.178957521Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:25:41.178825Z"}
+2019-09-26T11:25:54.162516546Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:25:54.162407Z"}
+2019-09-26T11:26:11.189096982Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:26:11.188864Z"}
+2019-09-26T11:26:24.162981043Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:26:24.162271Z"}
+2019-09-26T11:26:41.188485024Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:26:41.188396Z"}
+2019-09-26T11:26:54.154951298Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:26:54.154830Z"}
+2019-09-26T11:27:11.194597269Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:27:11.193851Z"}
+2019-09-26T11:27:24.157296912Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:27:24.157202Z"}
+2019-09-26T11:27:41.184945458Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:27:41.182533Z"}
+2019-09-26T11:27:54.152959701Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:27:54.152469Z"}
+2019-09-26T11:28:11.198175241Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:28:11.197973Z"}
+2019-09-26T11:28:24.157075504Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:28:24.156075Z"}
+2019-09-26T11:28:41.192238341Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:28:41.192144Z"}
+2019-09-26T11:28:54.154733103Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:28:54.154661Z"}
+2019-09-26T11:29:11.184328271Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:29:11.184071Z"}
+2019-09-26T11:29:24.158474108Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:29:24.158378Z"}
+2019-09-26T11:29:41.194965051Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:29:41.194274Z"}
+2019-09-26T11:29:54.159548311Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:29:54.159459Z"}
+2019-09-26T11:30:11.193283566Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:30:11.193188Z"}
+2019-09-26T11:30:24.153546905Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:30:24.152657Z"}
+2019-09-26T11:30:41.191264258Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:30:41.191193Z"}
+2019-09-26T11:30:54.153882079Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:30:54.152346Z"}
+2019-09-26T11:31:11.201998124Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:31:11.201178Z"}
+2019-09-26T11:31:24.155090067Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:31:24.154369Z"}
+2019-09-26T11:31:41.187674817Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:31:41.187595Z"}
+2019-09-26T11:31:54.152589218Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:31:54.152503Z"}
+2019-09-26T11:32:11.190567834Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:32:11.190359Z"}
+2019-09-26T11:32:24.165669808Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:32:24.165596Z"}
+2019-09-26T11:32:41.185580396Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:32:41.181427Z"}
+2019-09-26T11:32:54.152947455Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:32:54.152532Z"}
+2019-09-26T11:33:11.196086173Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:33:11.190481Z"}
+2019-09-26T11:33:24.155037648Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:33:24.154568Z"}
+2019-09-26T11:33:41.18290108Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:33:41.182499Z"}
+2019-09-26T11:33:54.151687602Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:33:54.151549Z"}
+2019-09-26T11:34:11.182010107Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:34:11.181868Z"}
+2019-09-26T11:34:24.156948405Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:34:24.156592Z"}
+2019-09-26T11:34:41.182120531Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:34:41.181865Z"}
+2019-09-26T11:34:54.15364869Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:34:54.153542Z"}
+2019-09-26T11:35:11.184527387Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:35:11.183375Z"}
+2019-09-26T11:35:24.150863938Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:35:24.150798Z"}
+2019-09-26T11:35:41.189268047Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:35:41.185395Z"}
+2019-09-26T11:35:54.153736948Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:35:54.153471Z"}
+2019-09-26T11:36:11.195577612Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:36:11.195511Z"}
+2019-09-26T11:36:24.154565951Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:36:24.154389Z"}
+2019-09-26T11:36:41.191200828Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:36:41.191124Z"}
+2019-09-26T11:36:54.152960781Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:36:54.152854Z"}
+2019-09-26T11:37:11.188060201Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:37:11.187827Z"}
+2019-09-26T11:37:24.152981069Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:37:24.152877Z"}
+2019-09-26T11:37:41.192798653Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:37:41.192706Z"}
+2019-09-26T11:37:54.152399284Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:37:54.152309Z"}
+2019-09-26T11:38:11.183416678Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:38:11.183329Z"}
+2019-09-26T11:38:24.152949122Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:38:24.152607Z"}
+2019-09-26T11:38:41.182290448Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:38:41.182169Z"}
+2019-09-26T11:38:54.153333015Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:38:54.153207Z"}
+2019-09-26T11:39:11.234638877Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:39:11.233163Z"}
+2019-09-26T11:39:24.152943421Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:39:24.152241Z"}
+2019-09-26T11:39:41.186957522Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:39:41.186537Z"}
+2019-09-26T11:39:54.152525867Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:39:54.152417Z"}
+2019-09-26T11:40:11.186516827Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:40:11.185201Z"}
+2019-09-26T11:40:24.165518507Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:40:24.165452Z"}
+2019-09-26T11:40:41.187935542Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:40:41.187189Z"}
+2019-09-26T11:40:54.152099323Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:40:54.151681Z"}
+2019-09-26T11:41:11.182001183Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:41:11.181835Z"}
+2019-09-26T11:41:24.152654723Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:41:24.152573Z"}
+2019-09-26T11:41:41.186162611Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:41:41.186083Z"}
+2019-09-26T11:41:54.15163268Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:41:54.151564Z"}
+2019-09-26T11:42:11.196206039Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:42:11.194212Z"}
+2019-09-26T11:42:24.149955591Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:42:24.149396Z"}
+2019-09-26T11:42:41.181982939Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:42:41.181106Z"}
+2019-09-26T11:42:54.172248409Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:42:54.172134Z"}
+2019-09-26T11:43:11.185879033Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:43:11.183107Z"}
+2019-09-26T11:43:24.152261451Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:43:24.152196Z"}
+2019-09-26T11:43:41.186612422Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:43:41.186501Z"}
+2019-09-26T11:43:54.149437545Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:43:54.149379Z"}
+2019-09-26T11:44:11.194125788Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:44:11.193905Z"}
+2019-09-26T11:44:24.15662736Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:44:24.154977Z"}
+2019-09-26T11:44:41.236960912Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:44:41.236349Z"}
+2019-09-26T11:44:54.152088202Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:44:54.152012Z"}
+2019-09-26T11:45:11.195944091Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:45:11.195014Z"}
+2019-09-26T11:45:24.151946421Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:45:24.151563Z"}
+2019-09-26T11:45:41.187035493Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:45:41.182182Z"}
+2019-09-26T11:45:54.150872718Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:45:54.150741Z"}
+2019-09-26T11:46:11.211938423Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:46:11.211738Z"}
+2019-09-26T11:46:24.154425066Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:46:24.154348Z"}
+2019-09-26T11:46:41.205966901Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:46:41.205194Z"}
+2019-09-26T11:46:54.151617554Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:46:54.151502Z"}
+2019-09-26T11:47:11.181079044Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:47:11.178885Z"}
+2019-09-26T11:47:24.15000952Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:47:24.149903Z"}
+2019-09-26T11:47:41.184805866Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:47:41.182955Z"}
+2019-09-26T11:47:54.151264993Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:47:54.151195Z"}
+2019-09-26T11:48:11.20093085Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:48:11.200837Z"}
+2019-09-26T11:48:24.151069859Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:48:24.150966Z"}
+2019-09-26T11:48:41.19495416Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:48:41.193860Z"}
+2019-09-26T11:48:54.151981937Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:48:54.150119Z"}
+2019-09-26T11:49:11.328858453Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:49:11.328350Z"}
+2019-09-26T11:49:24.14808768Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:49:24.147852Z"}
+2019-09-26T11:49:41.185019604Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:49:41.183956Z"}
+2019-09-26T11:49:54.14881405Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:49:54.148735Z"}
+2019-09-26T11:50:11.19100296Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:50:11.185601Z"}
+2019-09-26T11:50:24.150969432Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:50:24.150673Z"}
+2019-09-26T11:50:41.186984348Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:50:41.184861Z"}
+2019-09-26T11:50:54.156996981Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:50:54.156555Z"}
+2019-09-26T11:51:11.200946904Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:51:11.200307Z"}
+2019-09-26T11:51:24.152398177Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:51:24.152323Z"}
+2019-09-26T11:51:41.18788945Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:51:41.186450Z"}
+2019-09-26T11:51:54.151455805Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:51:54.151278Z"}
+2019-09-26T11:52:11.186933051Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:52:11.186773Z"}
+2019-09-26T11:52:24.150175349Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:52:24.149887Z"}
+2019-09-26T11:52:41.274001161Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:52:41.273667Z"}
+2019-09-26T11:52:54.148724552Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:52:54.148645Z"}
+2019-09-26T11:53:11.181991358Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:53:11.179565Z"}
+2019-09-26T11:53:24.147970239Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:53:24.147454Z"}
+2019-09-26T11:53:41.189742031Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:53:41.189610Z"}
+2019-09-26T11:53:54.152946064Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:53:54.151996Z"}
+2019-09-26T11:54:11.188958758Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:54:11.186768Z"}
+2019-09-26T11:54:24.155482498Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:54:24.150333Z"}
+2019-09-26T11:54:41.196664701Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:54:41.195589Z"}
+2019-09-26T11:54:54.15669071Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:54:54.156610Z"}
+2019-09-26T11:55:11.374999395Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:55:11.373315Z"}
+2019-09-26T11:55:24.152968307Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:55:24.151433Z"}
+2019-09-26T11:55:41.19449371Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:55:41.194260Z"}
+2019-09-26T11:55:54.151952183Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:55:54.150942Z"}
+2019-09-26T11:56:11.182842772Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:56:11.182762Z"}
+2019-09-26T11:56:24.152127455Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:56:24.152054Z"}
+2019-09-26T11:56:41.182934965Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:56:41.182686Z"}
+2019-09-26T11:56:54.162314567Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:56:54.160616Z"}
+2019-09-26T11:57:11.186574074Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:57:11.186420Z"}
+2019-09-26T11:57:24.15236367Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:57:24.152236Z"}
+2019-09-26T11:57:41.204690535Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:57:41.204555Z"}
+2019-09-26T11:57:54.147701877Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:57:54.147596Z"}
+2019-09-26T11:58:11.202442646Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:58:11.201317Z"}
+2019-09-26T11:58:24.147574648Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:58:24.147423Z"}
+2019-09-26T11:58:41.201631242Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:58:41.198550Z"}
+2019-09-26T11:58:54.149815269Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:58:54.149708Z"}
+2019-09-26T11:59:11.186741918Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:59:11.186518Z"}
+2019-09-26T11:59:24.151957213Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:59:24.151448Z"}
+2019-09-26T11:59:41.186985528Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:59:41.185696Z"}
+2019-09-26T11:59:54.147102092Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T11:59:54.145326Z"}
+2019-09-26T12:00:11.192144332Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:00:11.191348Z"}
+2019-09-26T12:00:24.149954167Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:00:24.148763Z"}
+2019-09-26T12:00:41.198986304Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:00:41.197565Z"}
+2019-09-26T12:00:54.146065027Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:00:54.146005Z"}
+2019-09-26T12:01:11.191968553Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:01:11.188532Z"}
+2019-09-26T12:01:24.150971631Z {"component":"virt-handler","level":"info","msg":"Collection completed","pos":"collector.go:81","timestamp":"2019-09-26T12:01:24.150563Z"}
