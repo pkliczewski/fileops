@@ -1,66 +1,53 @@
-package main
+package fileops
 
 import (
+	"bufio"
 	"errors"
-	"fmt"
 	"os"
 	"strings"
 	"time"
 )
 
 var (
-	filename = "copy.log"
-	numLines = 5
-	date     = "2019-09-26T12:01:24.150971631Z"
-	minutes  = 10
+	date = "2019-09-26T12:01:24.150971631Z"
 )
 
-func main() {
-	// fn := limitPartial(numLines)
-	fn := datePartial(minutes)
-	text, err := TailFile(filename, fn)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Print(text)
-	return
-}
-
-func limitPartial(numLines int) func([]string, []byte, int) (bool, []string) {
-	return func(resultLines []string, line []byte, lines int) (bool, []string) {
-		return lines >= numLines-1, append(resultLines, reverse(line))
+// LimitPartial allows to provide line limit and return condition function
+func LimitPartial(numLines int) func([]string, []byte, int) (bool, []string, error) {
+	return func(resultLines []string, line []byte, lines int) (bool, []string, error) {
+		return lines >= numLines-1, append(resultLines, reverse(line)), nil
 	}
 }
 
-func datePartial(minutes int) func([]string, []byte, int) (bool, []string) {
+// DatePartial allows to provide date and return condition function
+func DatePartial(minutes int) func([]string, []byte, int) (bool, []string, error) {
 	// mock current data base on last time stamp from the log
 	now, _ := time.Parse(time.RFC3339, date)
 	deadline := now.Add(time.Duration(0-minutes) * time.Minute)
 
-	return func(lines []string, line []byte, _ int) (bool, []string) {
+	return func(lines []string, line []byte, _ int) (bool, []string, error) {
 		words := strings.Fields(reverse(line))
 		lineTime, err := time.Parse(time.RFC3339, words[0])
 		if err != nil {
-			return true, lines
+			return true, lines, err
 		}
 		diff := deadline.Sub(lineTime)
-		return diff >= 0, append(lines, string(line))
+		return diff >= 0, append(lines, string(line)), nil
 	}
 }
 
-type check func([]string, []byte, int) (bool, []string)
+// Check defines function signature to check whether the condition was met
+type Check func([]string, []byte, int) (bool, []string, error)
 
 // TailFile trims end of the file by defined func
-func TailFile(filename string, fn check) ([]string, error) {
+func TailFile(filename string, fn Check) error {
 	if len(filename) == 0 {
-		return []string{}, errors.New("you must provide the path to a file")
+		return errors.New("you must provide the path to a file")
 	}
 
 	file, err := os.Open(filename)
 	if err != nil {
-		return []string{}, err
+		return err
 	}
 	defer file.Close()
 
@@ -74,7 +61,7 @@ func TailFile(filename string, fn check) ([]string, error) {
 		// seek to new position in file
 		startPos, err := file.Seek(offset, 2)
 		if err != nil {
-			return []string{}, err
+			return err
 		}
 
 		// make sure start position can never be less than 0
@@ -86,7 +73,7 @@ func TailFile(filename string, fn check) ([]string, error) {
 		_, err = file.ReadAt(b, startPos)
 		line = append(line, b...)
 		if err != nil {
-			return []string{}, err
+			return err
 		}
 
 		// ignore if first character being read is a newline
@@ -98,7 +85,11 @@ func TailFile(filename string, fn check) ([]string, error) {
 
 		// if the character is a newline add to the number of lines read
 		if string(b) == "\n" {
-			cond, resultLines = fn(resultLines, line, lines)
+			cond, resultLines, err = fn(resultLines, line, lines)
+			if err != nil {
+				return err
+			}
+
 			if cond {
 				break
 			}
@@ -109,7 +100,26 @@ func TailFile(filename string, fn check) ([]string, error) {
 		offset--
 	}
 
-	return reverseLines(resultLines), nil
+	return writeLines(reverseLines(resultLines), filename)
+}
+
+func writeLines(lines []string, filename string) error {
+	file, err := os.Create(filename)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	writer := bufio.NewWriter(file)
+	defer writer.Flush()
+
+	for _, line := range lines {
+		_, err := writer.WriteString(line)
+		if err != nil {
+			return err
+		}
+	}
+
+	return nil
 }
 
 func reverse(a []byte) string {

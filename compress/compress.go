@@ -3,13 +3,16 @@ package compress
 import (
 	"archive/tar"
 	"compress/gzip"
+	"fmt"
 	"io"
 	"os"
 	"path/filepath"
+
+	"github.com/pkliczewski/fileops/fileops"
 )
 
-// Compress tars provided source directory
-func Compress(filename string, source string) error {
+// Compress tars provided source directory and uses Check function to filter logs
+func Compress(filename string, source string, fn fileops.Check) error {
 	file, err := os.Create(filename)
 	if err != nil {
 		return err
@@ -28,18 +31,31 @@ func Compress(filename string, source string) error {
 			return err
 		}
 
-		// fill in header info using func FileInfoHeader
-		header, err := tar.FileInfoHeader(info, info.Name())
-		if err != nil {
-			return err
-		}
-
 		relPath, err := filepath.Rel(source, path)
 		if err != nil {
 			return err
 		}
 		if relPath == "." {
 			return nil
+		}
+
+		if filepath.Ext(relPath) == ".log" && fn != nil {
+			err = fileops.TailFile(path, fn)
+			if err != nil {
+				// TODO remove once we understand which files should be parsed
+				fmt.Println(path)
+			}
+
+			info, err = os.Stat(path)
+			if err != nil {
+				return err
+			}
+		}
+
+		// fill in header info using func FileInfoHeader
+		header, err := tar.FileInfoHeader(info, info.Name())
+		if err != nil {
+			return err
 		}
 
 		// ensure header has relative file path
