@@ -7,12 +7,18 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"strings"
+	"time"
 
 	"github.com/pkliczewski/fileops/fileops"
 )
 
-// Compress tars provided source directory and uses Check function to filter logs
-func Compress(filename string, source string, fn fileops.Check) error {
+var (
+	date = "2019-09-26T12:08:46Z"
+)
+
+// Compress tars provided source directory and uses numLines or mins to filter
+func Compress(filename string, source string, numLines int, mins int) error {
 	file, err := os.Create(filename)
 	if err != nil {
 		return err
@@ -39,18 +45,7 @@ func Compress(filename string, source string, fn fileops.Check) error {
 			return nil
 		}
 
-		if filepath.Ext(relPath) == ".log" && fn != nil {
-			err = fileops.TailFile(path, fn)
-			if err != nil {
-				// TODO remove once we understand which files should be parsed
-				fmt.Println(path)
-			}
-
-			info, err = os.Stat(path)
-			if err != nil {
-				return err
-			}
-		}
+		info, err = filter(relPath, path, numLines, mins, info)
 
 		// fill in header info using func FileInfoHeader
 		header, err := tar.FileInfoHeader(info, info.Name())
@@ -87,4 +82,53 @@ func Compress(filename string, source string, fn fileops.Check) error {
 	}
 
 	return nil
+}
+
+func filter(relPath string, path string, numLines int, mins int, info os.FileInfo) (os.FileInfo, error) {
+	var fn fileops.Check = nil
+	var err error = nil
+	if strings.Contains(relPath, "kubelet") || strings.Contains(relPath, "NetworkManager") {
+		fn, err = getPartial(numLines, mins, path, true)
+		if err != nil {
+			return info, err
+		}
+	} else if filepath.Ext(relPath) == ".log" {
+		fn, err = getPartial(numLines, mins, path, false)
+		if err != nil {
+			return info, err
+		}
+	}
+
+	if fn != nil {
+		err = fileops.TailFile(path, fn)
+		if err != nil {
+			// TODO remove once we understand which files should be parsed
+			fmt.Println(path)
+		}
+		info, err = os.Stat(path)
+		if err != nil {
+			return info, err
+		}
+	}
+	return info, nil
+}
+
+func getPartial(numLines int, mins int, filename string, journal bool) (fileops.Check, error) {
+	var fn fileops.Check = nil
+	var err error = nil
+
+	// mock current data base on last time stamp from the log
+	now, _ := time.Parse(time.RFC3339, date)
+	deadline := now.Add(time.Duration(0-mins) * time.Minute)
+
+	if mins > 0 {
+		if journal {
+			fn, err = fileops.JournalFunc(filename, deadline)
+		} else {
+			fn = fileops.DatePartial(deadline)
+		}
+	} else if numLines > 0 {
+		fn = fileops.LimitPartial(numLines)
+	}
+	return fn, err
 }

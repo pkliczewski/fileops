@@ -4,40 +4,61 @@ import (
 	"bufio"
 	"errors"
 	"os"
+	"regexp"
+	"strconv"
 	"strings"
 	"time"
 )
 
 var (
-	date = "2019-09-26T12:01:24.150971631Z"
+	errParsing = errors.New("Unable to parse start and end date")
 )
 
 // LimitPartial allows to provide line limit and return condition function
-func LimitPartial(numLines int) func([]string, []byte, int) (bool, []string, error) {
-	return func(resultLines []string, line []byte, lines int) (bool, []string, error) {
-		return lines >= numLines-1, append(resultLines, reverse(line)), nil
+func LimitPartial(numLines int) Check {
+	return func(line string, lines int) (bool, error) {
+		return lines >= numLines-1, nil
 	}
 }
 
 // DatePartial allows to provide date and return condition function
-func DatePartial(minutes int) func([]string, []byte, int) (bool, []string, error) {
-	// mock current data base on last time stamp from the log
-	now, _ := time.Parse(time.RFC3339, date)
-	deadline := now.Add(time.Duration(0-minutes) * time.Minute)
+func DatePartial(deadline time.Time) Check {
 
-	return func(lines []string, line []byte, _ int) (bool, []string, error) {
-		words := strings.Fields(reverse(line))
+	return func(line string, _ int) (bool, error) {
+		words := strings.Fields(line)
 		lineTime, err := time.Parse(time.RFC3339, words[0])
 		if err != nil {
-			return true, lines, err
+			return true, err
 		}
 		diff := deadline.Sub(lineTime)
-		return diff >= 0, append(lines, string(line)), nil
+		return diff >= 0, nil
+	}
+}
+
+// JournalDatePartial allows to provide journal end date and return condition function
+func JournalDatePartial(end time.Time, deadline time.Time) Check {
+	re := regexp.MustCompile("\\w{3}\\s\\w+\\s\\d{2}:\\d{2}:\\d{2}")
+	format := "2006 Jan 02 03:04:05 MST"
+
+	return func(line string, _ int) (bool, error) {
+		d := re.FindAllString(line, -1)
+		if len(d) != 1 {
+			return false, errParsing
+		}
+
+		zone, _ := end.Zone()
+		date := strconv.Itoa(end.Year()) + " " + d[0] + " " + zone
+		lineTime, err := time.Parse(format, date)
+		if err != nil {
+			return true, err
+		}
+		diff := deadline.Sub(lineTime)
+		return diff >= 0, nil
 	}
 }
 
 // Check defines function signature to check whether the condition was met
-type Check func([]string, []byte, int) (bool, []string, error)
+type Check func(string, int) (bool, error)
 
 // TailFile trims end of the file by defined func
 func TailFile(filename string, fn Check) error {
@@ -85,7 +106,8 @@ func TailFile(filename string, fn Check) error {
 
 		// if the character is a newline add to the number of lines read
 		if string(b) == "\n" {
-			cond, resultLines, err = fn(resultLines, line, lines)
+			l := reverse(line)
+			cond, err = fn(l, lines)
 			if err != nil {
 				return err
 			}
@@ -93,6 +115,7 @@ func TailFile(filename string, fn Check) error {
 			if cond {
 				break
 			}
+			resultLines = append(resultLines, l)
 			lines++
 			line = []byte{}
 		}
@@ -101,6 +124,38 @@ func TailFile(filename string, fn Check) error {
 	}
 
 	return writeLines(reverseLines(resultLines), filename)
+}
+
+// JournalFunc creates function for journal logs
+func JournalFunc(finename string, deadline time.Time) (Check, error) {
+	file, err := os.Open(finename)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	reader := bufio.NewReader(file)
+	reader.ReadLine()
+	dateLine, _, err := reader.ReadLine()
+	if err != nil {
+		return nil, err
+	}
+	re := regexp.MustCompile("\\w{3}\\s\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\s\\w{3}")
+	dates := re.FindAllString(string(dateLine), -1)
+	if len(dates) != 2 {
+		return nil, errParsing
+	}
+
+	format := "Thu 2006-01-02 03:04:05 MST"
+	end, err := time.Parse(format, dates[1])
+	if err != nil {
+		return nil, err
+	}
+
+	if end.Before(deadline) {
+		return nil, nil
+	}
+
+	return JournalDatePartial(end, deadline), nil
 }
 
 func writeLines(lines []string, filename string) error {

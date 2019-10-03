@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pkliczewski/fileops/fileops"
-
 	"github.com/pkliczewski/fileops/compress"
 )
 
@@ -27,14 +25,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	var fn fileops.Check = nil
-	if mins > 0 {
-		fn = fileops.DatePartial(mins)
-	} else if numLines > 0 {
-		fn = fileops.LimitPartial(numLines)
-	}
-
-	err := compress.Compress(dst, src, fn)
+	err := compress.Compress(dst, src, numLines, mins)
 	if err != nil {
 		fmt.Println(err)
 	}
