@@ -3,7 +3,6 @@ package compress
 import (
 	"archive/tar"
 	"compress/gzip"
-	"fmt"
 	"io"
 	"os"
 	"path/filepath"
@@ -11,10 +10,6 @@ import (
 	"time"
 
 	"github.com/pkliczewski/fileops/fileops"
-)
-
-var (
-	date = "2019-09-26T12:08:46Z"
 )
 
 // Compress tars provided source directory and uses numLines or mins to filter
@@ -45,7 +40,9 @@ func Compress(filename string, source string, numLines int, mins int) error {
 			return nil
 		}
 
-		info, err = filter(relPath, path, numLines, mins, info)
+		if info.Size() != 0 {
+			info, err = filter(relPath, path, numLines, mins, info)
+		}
 
 		// fill in header info using func FileInfoHeader
 		header, err := tar.FileInfoHeader(info, info.Name())
@@ -71,6 +68,7 @@ func Compress(filename string, source string, numLines int, mins int) error {
 		}
 		defer srcFile.Close()
 
+		// copy file contents
 		if _, err := io.Copy(tw, srcFile); err != nil {
 			return err
 		}
@@ -87,12 +85,16 @@ func Compress(filename string, source string, numLines int, mins int) error {
 func filter(relPath string, path string, numLines int, mins int, info os.FileInfo) (os.FileInfo, error) {
 	var fn fileops.Check = nil
 	var err error = nil
+	// filter journal based logs
 	if strings.Contains(relPath, "kubelet") || strings.Contains(relPath, "NetworkManager") {
 		fn, err = getPartial(numLines, mins, path, true)
 		if err != nil {
 			return info, err
 		}
-	} else if filepath.Ext(relPath) == ".log" {
+		// filter all pod logs but not qemu, cdi-apiserver, cdi-deployment and cdi-uploadproxy which are problematic to parse
+	} else if filepath.Ext(relPath) == ".log" && !strings.Contains(relPath, "qemu") &&
+		!strings.Contains(relPath, "cdi-apiserver") && !strings.Contains(relPath, "cdi-deployment") &&
+		!strings.Contains(relPath, "cdi-uploadproxy") {
 		fn, err = getPartial(numLines, mins, path, false)
 		if err != nil {
 			return info, err
@@ -100,10 +102,10 @@ func filter(relPath string, path string, numLines int, mins int, info os.FileInf
 	}
 
 	if fn != nil {
+		// run filtering logic
 		err = fileops.TailFile(path, fn)
 		if err != nil {
-			// TODO remove once we understand which files should be parsed
-			fmt.Println(path)
+			return info, err
 		}
 		info, err = os.Stat(path)
 		if err != nil {
@@ -117,16 +119,15 @@ func getPartial(numLines int, mins int, filename string, journal bool) (fileops.
 	var fn fileops.Check = nil
 	var err error = nil
 
-	// mock current data base on last time stamp from the log
-	now, _ := time.Parse(time.RFC3339, date)
-	deadline := now.Add(time.Duration(0-mins) * time.Minute)
-
+	// filter by date
 	if mins > 0 {
+		deadline := time.Now().Add(time.Duration(0-mins) * time.Minute)
 		if journal {
 			fn, err = fileops.JournalFunc(filename, deadline)
 		} else {
 			fn = fileops.DatePartial(deadline)
 		}
+		// filter by number of lines
 	} else if numLines > 0 {
 		fn = fileops.LimitPartial(numLines)
 	}

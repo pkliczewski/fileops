@@ -46,6 +46,7 @@ func JournalDatePartial(end time.Time, deadline time.Time) Check {
 			return false, errParsing
 		}
 
+		// use header end time to provide missing values from timestamp
 		zone, _ := end.Zone()
 		date := strconv.Itoa(end.Year()) + " " + d[0] + " " + zone
 		lineTime, err := time.Parse(format, date)
@@ -133,12 +134,15 @@ func JournalFunc(finename string, deadline time.Time) (Check, error) {
 		return nil, err
 	}
 	defer file.Close()
+
 	reader := bufio.NewReader(file)
+	// header start and end dates defined in second line
 	reader.ReadLine()
 	dateLine, _, err := reader.ReadLine()
 	if err != nil {
 		return nil, err
 	}
+	// parse header dates
 	re := regexp.MustCompile("\\w{3}\\s\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\s\\w{3}")
 	dates := re.FindAllString(string(dateLine), -1)
 	if len(dates) != 2 {
@@ -158,6 +162,7 @@ func JournalFunc(finename string, deadline time.Time) (Check, error) {
 	return JournalDatePartial(end, deadline), nil
 }
 
+// override file with provided lines
 func writeLines(lines []string, filename string) error {
 	file, err := os.Create(filename)
 	if err != nil {

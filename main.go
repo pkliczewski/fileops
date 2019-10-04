@@ -25,6 +25,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	// run compress with filter parameters
 	err := compress.Compress(dst, src, numLines, mins)
 	if err != nil {
 		fmt.Println(err)
