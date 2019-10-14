@@ -1,34 +1,59 @@
 package main
 
 import (
-	"flag"
-	"fmt"
+	"log"
 	"os"
+	"strconv"
+	"time"
 
 	"github.com/pkliczewski/fileops/compress"
 )
 
+const (
+	// SourceDir points to folder on PV to write and copy files from for gather data
+	SourceDir = "/must-gather/"
+	// DestinationFile defines prefix for destination file
+	DestinationFile = "must-gather"
+	// TerminationLog container termination log
+	TerminationLog = "/dev/termination-log"
+)
+
+func getValue(name string) int {
+	value, err := strconv.Atoi(os.Getenv(name))
+	if err != nil {
+		value = 0
+	}
+	return value
+}
+
+func logResult(message interface{}) {
+	f, err := os.OpenFile(TerminationLog, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatalf("error opening file: %v", err)
+	}
+	defer f.Close()
+
+	log.SetOutput(f)
+	log.Println(message)
+}
+
 func main() {
-	var src string
-	var dst string
+	now := time.Now()
+	filename := DestinationFile + now.Format("20060102150405") + ".tar.gz"
 
-	flag.StringVar(&src, "src", "/home/pkliczewski/go/src/github.com/pkliczewski/fileops/must-gather", "Source directory to be compressed")
-	flag.StringVar(&dst, "dst", "file.tar.gz", "Destination archive name")
-
-	var mins int
-	var numLines int
-	flag.IntVar(&mins, "since", 0, "Filter logs by time in minutes")
-	flag.IntVar(&numLines, "lines", 0, "Filter logs by last number of lines")
+	mins := getValue("MINUTES")
+	numLines := getValue("LINES")
 
 	if mins != 0 && numLines != 0 {
-		fmt.Println("Not possible to filter by time and number of lines")
+		logResult("Not possible to filter by time and number of lines")
 		os.Exit(1)
 	}
 
 	// run compress with filter parameters
-	err := compress.Compress(dst, src, numLines, mins)
+	err := compress.Compress(filename, SourceDir, numLines, mins)
 	if err != nil {
-		fmt.Println(err)
+		logResult(err)
+		os.Exit(1)
 	}
 	return
 }

@@ -8,8 +8,6 @@ import (
 	"path/filepath"
 	"strings"
 	"time"
-
-	"github.com/pkliczewski/fileops/fileops"
 )
 
 // Compress tars provided source directory and uses numLines or mins to filter
@@ -83,7 +81,7 @@ func Compress(filename string, source string, numLines int, mins int) error {
 }
 
 func filter(relPath string, path string, numLines int, mins int, info os.FileInfo) (os.FileInfo, error) {
-	var fn fileops.Check = nil
+	var fn Check = nil
 	var err error = nil
 	// filter journal based logs
 	if strings.Contains(relPath, "kubelet") || strings.Contains(relPath, "NetworkManager") {
@@ -103,7 +101,7 @@ func filter(relPath string, path string, numLines int, mins int, info os.FileInf
 
 	if fn != nil {
 		// run filtering logic
-		err = fileops.TailFile(path, fn)
+		err = TailFile(path, fn)
 		if err != nil {
 			return info, err
 		}
@@ -115,21 +113,21 @@ func filter(relPath string, path string, numLines int, mins int, info os.FileInf
 	return info, nil
 }
 
-func getPartial(numLines int, mins int, filename string, journal bool) (fileops.Check, error) {
-	var fn fileops.Check = nil
+func getPartial(numLines int, mins int, filename string, journal bool) (Check, error) {
+	var fn Check = nil
 	var err error = nil
 
 	// filter by date
 	if mins > 0 {
 		deadline := time.Now().Add(time.Duration(0-mins) * time.Minute)
 		if journal {
-			fn, err = fileops.JournalFunc(filename, deadline)
+			fn, err = JournalFunc(filename, deadline)
 		} else {
-			fn = fileops.DatePartial(deadline)
+			fn = DatePartial(deadline)
 		}
 		// filter by number of lines
 	} else if numLines > 0 {
-		fn = fileops.LimitPartial(numLines)
+		fn = LimitPartial(numLines)
 	}
 	return fn, err
 }
